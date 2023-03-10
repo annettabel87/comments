@@ -3,14 +3,14 @@ class Store {
         {
             id: 1,
             name: 'Anna',
-            comment: 'hello',
+            comment: 'hello, my friends.',
             date: '01.01.2022 16:58',
             isLiked: true
         },
         {
             id: 2,
             name: 'Алексей',
-            comment: 'hello',
+            comment: 'Привет, пойдём поиграем в geometry dash.',
             date: '10.03.2023 16:58',
             isLiked: true
         },   

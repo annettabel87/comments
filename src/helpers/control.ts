@@ -8,3 +8,5 @@ export const createElement = (parentNode: HTMLElement | null, tagName = 'div', c
 
   return element;
 };
+
+// функция для автоматизации создания объектов

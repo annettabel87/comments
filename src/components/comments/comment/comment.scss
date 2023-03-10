@@ -1,0 +1,43 @@
+.comment {
+    background-color: lightblue;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+    font-size: 21px;
+
+    &__bold {
+        font-weight: bold;        
+    }
+
+    &__light {
+        color: #8d8c8c;
+        font-size: 16px;
+    }
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    padding: 4px 10px;    
+}
+
+.like-btn {
+    height: 35px;
+    width: 35px;
+    background-image: url('../../../../assets/like.svg');    
+    background-color: inherit;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;    
+
+    &.isLiked {        
+        background-image: url('../../../../assets/liked.svg');    
+    }
+}
+    
+    

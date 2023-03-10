@@ -15,7 +15,7 @@ export class formHelper {
     }  
 
     static validate(value: string, min: number, max: number) {
-        return value.length >= min   && value.length <= max ? true : false
+        return value.length >= min   && value.length <= max ? true : false;
     }
 
     static createErrorBlock(parent: HTMLElement, text: string, isShow: boolean) {        
