@@ -1,16 +1,17 @@
-import { IFormData, commentsData } from "../commentsData";
+import { IFormData, globalStore } from "../Store";
 import { createElement } from "./control";
-import { dateHelper } from "./dateHelper";
 
 export class formHelper {    
 
     static addData(nameValue: string, textValue: string, dateValue: string) {
-        const data: IFormData = {};
-        data.id = Date.now();
-        data.name = nameValue;
-        data.comment = textValue;
-        data.date = dateValue ? dateValue : dateHelper.getDateToString();        
-        commentsData.push(data);        
+        const data: IFormData = {
+            id: Date.now(),
+            isLiked: false,
+            name: nameValue,
+            comment: textValue,
+            date: dateValue ? dateValue : Date.now().valueOf()
+        };
+        globalStore.addComment(data);                
     }  
 
     static validate(value: string, min: number, max: number) {

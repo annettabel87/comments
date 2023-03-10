@@ -1,6 +1,7 @@
 import { createElement } from '../../helpers/control';
 import { dateHelper } from '../../helpers/dateHelper';
 import { formHelper } from '../../helpers/formHelper';
+import { addComments } from '../comments/commentsBlock';
 import './form.scss';
 
 export const form = createElement(null, 'form', 'form') as HTMLFormElement;
@@ -72,6 +73,7 @@ function changeHelper(elem: HTMLInputElement | HTMLTextAreaElement, min: number,
 
 function submitForm(e: SubmitEvent | KeyboardEvent) {
     e.preventDefault();
-    formHelper.addData(nameInput.value, textInput.value, dateInput.value);
+    formHelper.addData(nameInput.value, textInput.value, dateInput.value );    
     form.reset();
+    addComments();
 }
