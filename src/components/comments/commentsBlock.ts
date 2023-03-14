@@ -4,8 +4,9 @@ import { createComment } from './comment/comment';
 import './commentsBlock.scss';
 
 export const commentsBlock = createElement(null, 'div','comments-block');
+
 commentsBlock.addEventListener('click', (e: MouseEvent) => {
-    console.log(e);
+    
     const target = e.target;
     
 

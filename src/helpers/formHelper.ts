@@ -11,6 +11,7 @@ export class formHelper {
             comment: textValue,
             date: dateValue ? dateValue : Date.now().valueOf()
         };
+        
         globalStore.addComment(data);                
     }  
 

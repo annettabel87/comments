@@ -4,6 +4,7 @@ import { createElement } from '../../../helpers/control';
 import './comment.scss';
 
 export const createComment = (commentData: IFormData, parent: HTMLElement) => {
+    
     const comment = createElement(parent, 'div', 'comment');
     comment.id = commentData.id.toString();
 

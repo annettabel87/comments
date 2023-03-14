@@ -34,7 +34,13 @@ button {
     display: flex;    
     gap: 15px;
     min-height: 100vh; 
-    align-items: stretch;   
+    align-items: stretch;
+    
+    @media screen and (max-width: 700px) {
+        & {
+            flex-direction: column;
+        }
+    }
 }
 
 .main {
